@@ -1,14 +1,88 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>TujuDe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101126">
+<title>XI • Class Space</title>
+<style>
+:root{--bg:#0d1020;--panel:#151a30;--panel2:#1b2240;--text:#f4f5ff;--muted:#a8b0cc;--line:rgba(255,255,255,.09);--accent:#a78bfa;--accent2:#67e8f9;--good:#86efac;--shadow:0 18px 55px rgba(0,0,0,.25)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 10% 0%,rgba(124,58,237,.18),transparent 35%),radial-gradient(ellipse at 90% 15%,rgba(34,211,238,.12),transparent 30%),var(--bg);color:var(--text);font:15px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}button,a{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer;color:inherit}.wrap{width:min(1160px,calc(100% - 36px));margin:auto}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}.logo{width:40px;height:40px;border-radius:14px;background:linear-gradient(135deg,#8b5cf6,#22d3ee);display:grid;place-items:center;color:#101126;font-weight:950;box-shadow:0 8px 25px #8b5cf644}.nav{display:flex;gap:24px;color:var(--muted);font-size:14px}.nav a:hover{color:white}.top-actions{display:flex;align-items:center;gap:10px}.pill,.btn{border:1px solid var(--line);border-radius:999px;padding:9px 15px;background:rgba(255,255,255,.04);color:var(--text)}.btn.primary{background:linear-gradient(120deg,#8b5cf6,#6366f1);border:0;font-weight:700;box-shadow:0 8px 24px #7c3aed44}.hero{padding:58px 0 34px;display:grid;grid-template-columns:1.4fr .8fr;gap:28px;align-items:stretch}.eyebrow{color:var(--accent2);font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:800}.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.04;letter-spacing:-2.8px;margin:13px 0 16px}.gradient{background:linear-gradient(100deg,#c4b5fd,#67e8f9);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);max-width:610px;margin:0 0 25px;font-size:16px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}.hero-card{border:1px solid var(--line);background:linear-gradient(145deg,rgba(139,92,246,.2),rgba(34,211,238,.07)),var(--panel);border-radius:26px;padding:25px;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:space-between;min-height:255px;position:relative;overflow:hidden}.hero-card:after{content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:#a78bfa22;right:-60px;top:-60px}.date-label{color:var(--muted);font-size:13px}.clock{font-size:43px;font-weight:800;letter-spacing:-2px;margin:3px 0}.quote{font-size:14px;color:#d9dcf3;max-width:260px}.section{padding:30px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:18px}.section-head h2{font-size:23px;margin:3px 0 0;letter-spacing:-.6px}.section-head p{margin:0;color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:linear-gradient(160deg,rgba(255,255,255,.035),transparent 70%),var(--panel);border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:var(--shadow)}.card h3{margin:8px 0 5px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:13px}.iconbox{width:42px;height:42px;border-radius:14px;background:var(--panel2);display:grid;place-items:center;font-size:20px}.tag{display:inline-flex;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:700;background:#8b5cf622;color:#c4b5fd}.tag.cyan{background:#22d3ee18;color:#67e8f9}.tag.green{background:#22c55e18;color:#86efac}.schedule{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.day{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:15px;min-height:150px}.day strong{display:block;margin-bottom:12px}.lesson{border-left:3px solid var(--accent);padding:7px 9px;background:#a78bfa12;border-radius:0 9px 9px 0;margin:8px 0;font-size:12px}.lesson small{display:block;color:var(--muted);font-size:10px}.notice{display:flex;gap:13px;align-items:flex-start}.notice+.notice{border-top:1px solid var(--line);padding-top:15px;margin-top:15px}.notice .iconbox{flex:none}.notice h3{margin:0 0 4px}.notice p{margin:0;color:var(--muted);font-size:13px}.task{display:flex;align-items:center;gap:11px;padding:11px 0;border-bottom:1px solid var(--line)}.task:last-child{border:0}.task input{accent-color:#a78bfa;width:17px;height:17px}.task.done span{text-decoration:line-through;color:#7e88a8}.task span{flex:1}.task small{color:var(--muted)}.task-progress{height:7px;border-radius:9px;background:#ffffff12;overflow:hidden;margin:13px 0 4px}.task-progress div{height:100%;width:0;background:linear-gradient(90deg,#8b5cf6,#22d3ee);transition:width .25s}.member-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.member{display:flex;align-items:center;gap:11px;padding:13px;background:var(--panel);border:1px solid var(--line);border-radius:15px}.avatar{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,#8b5cf6,#22d3ee);display:grid;place-items:center;color:#101126;font-weight:900}.member b{display:block;font-size:13px}.member small{color:var(--muted);font-size:11px}.footer{margin-top:45px;border-top:1px solid var(--line);padding:25px 0 40px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:12px}.modal{position:fixed;inset:0;background:#050611bb;display:none;place-items:center;padding:20px;z-index:5}.modal.show{display:grid}.modalbox{width:min(430px,100%);background:#171c34;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow)}.modalbox h3{margin:0 0 14px}.modalbox label{display:block;color:var(--muted);font-size:12px;margin:12px 0 5px}.modalbox input,.modalbox textarea{width:100%;border:1px solid var(--line);border-radius:11px;background:#0e1328;color:white;padding:11px;font:inherit}.modalbox textarea{min-height:90px;resize:vertical}.modal-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:16px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);opacity:0;background:#222944;border:1px solid var(--line);border-radius:999px;padding:10px 16px;font-size:13px;transition:.25s;z-index:8;pointer-events:none}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}.mobile-menu{display:none}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:40px}.grid{grid-template-columns:1fr 1fr}.schedule{grid-template-columns:repeat(2,1fr)}.member-grid{grid-template-columns:repeat(2,1fr)}.nav{display:none}.mobile-menu{display:inline-flex}}
+@media(max-width:520px){.wrap{width:min(100% - 26px,1160px)}.topbar{height:66px}.hero h1{letter-spacing:-1.8px}.grid{grid-template-columns:1fr}.schedule{grid-template-columns:1fr 1fr}.day{min-height:130px;padding:12px}.member-grid{grid-template-columns:1fr 1fr}.footer{flex-direction:column}.pill{display:none}}
+</style>
 </head>
 <body>
+<header class="wrap topbar">
+  <a class="brand" href="#"><span class="logo">XI</span><span>CLASS<span class="gradient">SPACE</span></span></a>
+  <nav class="nav"><a href="#beranda">Beranda</a><a href="#jadwal">Jadwal</a><a href="#info">Informasi</a><a href="#anggota">Anggota</a></nav>
+  <div class="top-actions"><span class="pill">Tahun Ajaran 2026/2027</span><a class="btn primary" href="#info">Jelajahi kelas ↗</a></div>
+</header>
+<main class="wrap">
+  <section class="hero" id="beranda">
+    <div><div class="eyebrow">✦ Satu kelas, banyak cerita</div><h1>Tempat kita<br><span class="gradient">bertumbuh bersama.</span></h1><p>Selamat datang di ruang digital kelas XI. Pusat informasi, jadwal pelajaran, pengumuman, dan hal-hal seru dari kelas kita.</p><div class="hero-buttons"><a class="btn primary" href="#jadwal">Lihat jadwal kelas →</a><a class="btn" href="#info">Lihat pengumuman</a></div></div>
+    <aside class="hero-card"><div><div class="date-label" id="today">HARI INI</div><div class="clock" id="clock">00:00</div><div class="date-label">Waktu lokal perangkatmu</div></div><div class="quote">“Hebat bukan karena selalu sama, tetapi karena saling membantu untuk maju.”</div></aside>
+  </section>
 
-    <h1>Halo dunia</h1>
-    <p>Ini versi website TujuDe pertama.</p>
+  <section class="section">
+    <div class="section-head"><div><div class="eyebrow">Class overview</div><h2>Kelas dalam angka</h2></div><p>Ganti data contoh ini sesuai kelasmu.</p></div>
+    <div class="grid">
+      <article class="card"><div class="iconbox">👥</div><h3>32 siswa</h3><p>Teman belajar dan bertumbuh bersama.</p></article>
+      <article class="card"><div class="iconbox">📚</div><h3>12 mata pelajaran</h3><p>Belajar hal baru setiap hari.</p></article>
+      <article class="card"><div class="iconbox">🚀</div><h3>1 tujuan bersama</h3><p>Menjadi versi terbaik dari diri sendiri.</p></article>
+    </div>
+  </section>
 
+  <section class="section" id="jadwal">
+    <div class="section-head"><div><div class="eyebrow">Weekly planner</div><h2>Jadwal pelajaran</h2></div><span class="tag cyan">Contoh jadwal · edit sesuai kebutuhan</span></div>
+    <div class="schedule">
+      <div class="day"><strong>Senin</strong><div class="lesson">Matematika<small>07.30 – 09.00</small></div><div class="lesson">Bahasa Indonesia<small>09.30 – 11.00</small></div></div>
+      <div class="day"><strong>Selasa</strong><div class="lesson">Bahasa Inggris<small>07.30 – 09.00</small></div><div class="lesson">Informatika<small>09.30 – 11.00</small></div></div>
+      <div class="day"><strong>Rabu</strong><div class="lesson">IPA<small>07.30 – 09.00</small></div><div class="lesson">Sejarah<small>09.30 – 11.00</small></div></div>
+      <div class="day"><strong>Kamis</strong><div class="lesson">Pendidikan Pancasila<small>07.30 – 09.00</small></div><div class="lesson">PJOK<small>09.30 – 11.00</small></div></div>
+      <div class="day"><strong>Jumat</strong><div class="lesson">Agama<small>07.30 – 09.00</small></div><div class="lesson">Seni Budaya<small>09.30 – 11.00</small></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="info">
+    <div class="section-head"><div><div class="eyebrow">What's happening</div><h2>Papan informasi</h2></div><button class="btn primary" id="addNotice">＋ Tambah catatan</button></div>
+    <div class="grid" style="grid-template-columns:1.15fr .85fr">
+      <article class="card"><div class="notice"><div class="iconbox">📢</div><div><span class="tag">Pengumuman</span><h3>Selamat datang di Class Space!</h3><p>Website ini menjadi pusat informasi kelas. Jangan lupa cek jadwal dan tugas secara berkala.</p></div></div><div id="noticeList"></div></article>
+      <article class="card"><div class="eyebrow">Personal checklist</div><h3>Daftar tugasmu</h3><p>Centang tugas yang sudah selesai. Data tersimpan di browser perangkat ini.</p><div class="task-progress"><div id="progress"></div></div><small id="progressText" style="color:var(--muted)">0 dari 3 selesai</small><div id="tasks">
+        <label class="task"><input type="checkbox"><span>Catat PR hari ini</span><small>Belajar</small></label>
+        <label class="task"><input type="checkbox"><span>Siapkan buku pelajaran</span><small>Persiapan</small></label>
+        <label class="task"><input type="checkbox"><span>Kerjakan tugas kelompok</span><small>Proyek</small></label>
+      </div><button class="btn" id="resetTasks" style="margin-top:10px">Reset checklist</button></article>
+    </div>
+  </section>
+
+  <section class="section" id="anggota">
+    <div class="section-head"><div><div class="eyebrow">Our people</div><h2>Struktur kelas</h2></div><p>Gunakan jabatan, bukan data pribadi sensitif.</p></div>
+    <div class="member-grid">
+      <div class="member"><div class="avatar">K</div><div><b>Nama Ketua</b><small>Ketua kelas</small></div></div>
+      <div class="member"><div class="avatar">W</div><div><b>Nama Wakil</b><small>Wakil ketua</small></div></div>
+      <div class="member"><div class="avatar">S</div><div><b>Nama Sekretaris</b><small>Sekretaris</small></div></div>
+      <div class="member"><div class="avatar">B</div><div><b>Nama Bendahara</b><small>Bendahara</small></div></div>
+    </div>
+  </section>
+</main>
+<footer class="wrap footer"><span>© 2026 Class Space · Dibuat untuk belajar dan tumbuh bersama.</span><span>Made with ✦ by our class</span></footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modalbox"><h3 id="modalTitle">Tambah catatan kelas</h3><label for="noticeTitle">Judul</label><input id="noticeTitle" maxlength="60" placeholder="Contoh: Tugas kelompok"><label for="noticeBody">Isi catatan</label><textarea id="noticeBody" maxlength="240" placeholder="Tulis informasi singkat..."></textarea><div class="modal-actions"><button class="btn" id="cancel">Batal</button><button class="btn primary" id="save">Simpan</button></div></div></div>
+<div class="toast" id="toast">Tersimpan!</div>
+<script>
+const $=s=>document.querySelector(s);
+function tick(){const d=new Date();$('#clock').textContent=d.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'});$('#today').textContent=d.toLocaleDateString('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric'});}
+tick();setInterval(tick,1000);
+const checks=[...document.querySelectorAll('#tasks input')];
+function updateTasks(){let done=checks.filter(x=>x.checked).length;$('#progress').style.width=(done/checks.length*100)+'%';$('#progressText').textContent=`${done} dari ${checks.length} selesai`;checks.forEach(x=>x.closest('.task').classList.toggle('done',x.checked));localStorage.setItem('classTasks',JSON.stringify(checks.map(x=>x.checked)));}
+try{const saved=JSON.parse(localStorage.getItem('classTasks')||'null');if(Array.isArray(saved))checks.forEach((x,i)=>x.checked=!!saved[i]);}catch(e){}checks.forEach(x=>x.addEventListener('change',updateTasks));updateTasks();
+$('#resetTasks').addEventListener('click',()=>{checks.forEach(x=>x.checked=false);updateTasks();toast('Checklist direset');});
+const modal=$('#modal');$('#addNotice').addEventListener('click',()=>{modal.classList.add('show');$('#noticeTitle').focus();});$('#cancel').addEventListener('click',()=>modal.classList.remove('show'));modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('show');});
+function toast(msg){$('#toast').textContent=msg;$('#toast').classList.add('show');setTimeout(()=>$('#toast').classList.remove('show'),2200);}
+function renderNotices(){let list=[];try{list=JSON.parse(localStorage.getItem('classNotices')||'[]')}catch(e){}$('#noticeList').innerHTML=list.map(n=>`<div class="notice"><div class="iconbox">📝</div><div><span class="tag green">Catatan kelas</span><h3></h3><p></p></div></div>`).join('');[...$('#noticeList').querySelectorAll('.notice')].forEach((el,i)=>{el.querySelector('h3').textContent=list[i].title;el.querySelector('p').textContent=list[i].body;});}
+$('#save').addEventListener('click',()=>{const title=$('#noticeTitle').value.trim(),body=$('#noticeBody').value.trim();if(!title||!body){toast('Judul dan isi perlu diisi');return;}let list=[];try{list=JSON.parse(localStorage.getItem('classNotices')||'[]')}catch(e){}list.unshift({title,body});localStorage.setItem('classNotices',JSON.stringify(list.slice(0,5)));renderNotices();$('#noticeTitle').value='';$('#noticeBody').value='';modal.classList.remove('show');toast('Catatan disimpan di browser ini');});
+renderNotices();
+</script>
 </body>
 </html>
